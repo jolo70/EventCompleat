@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Event Compleat</title>
+  
+<!-- libs, css, app, models, stores, views, controllers [in that order!] -->
+<!--	<script type="text/javascript" charset="utf-8" src="lib/extjs/ext-all.js"></script> -->  
+	<script type="text/javascript" charset="utf-8" src="lib/touch/sencha-touch.js"></script>
+	<script type="text/javascript" charset="utf-8" src="lib/jolo-utils.js"></script>	
+	
+	<script type="text/javascript" charset="utf-8" src="lib/touch/touch-charts.js"></script>
+	
+<!-- CSS --> 	
+	<link rel="stylesheet" href="lib/touch/resources/css/sencha-touch.css" type="text/css" />
+	<link rel="stylesheet" href="app/css/Events.css" type="text/css" />
+
+<!-- app -->	
+	<script type="text/javascript" charset="utf-8" src="app/app.js"></script>
+	
+<!-- Models --> 
+	<script type="text/javascript" charset="utf-8" src="app/models/EventActions.js"></script>	
+	<script type="text/javascript" charset="utf-8" src="app/models/EventTypes.js"></script>	
+	<script type="text/javascript" charset="utf-8" src="app/models/EventStyles.js"></script>		
+	<script type="text/javascript" charset="utf-8" src="app/models/TaskList.js"></script>			
+	<script type="text/javascript" charset="utf-8" src="app/models/Attendees.js"></script>	
+	
+<!-- Stores -->
+	<script type="text/javascript" charset="utf-8" src="app/stores/Attendees.js"></script>
+	<script type="text/javascript" charset="utf-8" src="app/stores/EventActions.js"></script>
+	<script type="text/javascript" charset="utf-8" src="app/stores/EventTypes.js"></script>	
+	<script type="text/javascript" charset="utf-8" src="app/stores/EventStyles.js"></script>
+	<script type="text/javascript" charset="utf-8" src="app/stores/TaskListTemplates.js"></script>		
+	
+<!-- Views -->	
+	<script type="text/javascript" charset="utf-8" src="app/views/EventDetailAttendees.js"></script>
+	<script type="text/javascript" charset="utf-8" src="app/views/EventDetailTaskList.js"></script>
+	<script type="text/javascript" charset="utf-8" src="app/views/EventDetail.js"></script>	
+	<script type="text/javascript" charset="utf-8" src="app/views/EventForm.js"></script>	
+	<script type="text/javascript" charset="utf-8" src="app/views/EventsList.js"></script>	
+	<script type="text/javascript" charset="utf-8" src="app/views/Viewport.js"></script>	
+	<script type="text/javascript" charset="utf-8" src="app/views/EventDetailTimeLine.js"></script>
+	<script type="text/javascript" charset="utf-8" src="app/views/EventDetailBudget.js"></script>	
+	<script type="text/javascript" charset="utf-8" src="app/views/EventDetailBudgetChart.js"></script>	
+
+<!-- Controllers --> 
+	<script type="text/javascript" charset="utf-8" src="app/controllers/EventsList.js"></script>	
+	<script type="text/javascript" charset="utf-8" src="app/controllers/EventDetail.js"></script>	
+	<script type="text/javascript" charset="utf-8" src="app/controllers/EventForm.js"></script>		
+
+
+	<script type="text/javascript" charset="utf-8" src="phonegap-1.0.0.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		function onBodyLoad() {		
+			document.addEventListener("deviceready",app.mainLaunch,false);
+		}
+    </script>
+  </head>
+  <body onload="onBodyLoad()"></body>
+</html>

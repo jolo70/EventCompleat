@@ -1,0 +1,72 @@
+.HomePage {
+	background-image: url('../img/animus-mix.gif');
+	backround-repeat: no-repeat;
+}
+
+
+/* TASK LIST ITEMS */
+.li_name {
+	padding: 5px;
+	font-weight: bold;
+}
+
+.li_owner {
+	font-size: 10pt;
+	font-style:	bold;
+	color: gray;
+	width: 100px;
+}
+
+.li_description {
+	padding: 5px;
+	font-size: 70%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	/*white-space: nowrap;*/
+	width: 100%;
+	font-style: italic;
+}
+
+.li_location {
+	font-size: 10pt;
+	font-style:	bold;
+	color: gray;
+	width: 100px;
+}
+
+.li_date{
+	font-size: 10pt;
+	font-style:	bold;
+	color: gray;
+	width: 100px;
+}
+
+/* ATTENDEES */
+.attendees_full_name{
+	padding: 5px;
+	font-style: bold;
+}
+
+.x-tab img.event-complete, .x-button img.x-icon-mask.event-complete {
+	-webkit-mask-image: url('../../lib/touch/resources/themes/images/default/pictos/event_complete.png');
+}
+
+.x-tab img.mail, .x-button img.x-icon-mask.mail {
+	-webkit-mask-image: url('../../lib/touch/resources/themes/images/default/pictos/mail.png');
+}
+
+.x-tab img.user_list, .x-button img.x-icon-mask.user_list {
+	-webkit-mask-image: url('../../lib/touch/resources/themes/images/default/pictos/user_list.png');
+}
+
+.x-tab img.calendar2, .x-button img.x-icon-mask.calendar2 {
+	-webkit-mask-image: url('../../lib/touch/resources/themes/images/default/pictos/calendar2.png');
+}
+
+.x-tab img.piechart, .x-button img.x-icon-mask.piechart {
+	-webkit-mask-image: url('../../lib/touch/resources/themes/images/default/pictos/piechart.png');
+}
+
+.x-tab img.budget, .x-button img.x-icon-mask.budget {
+	-webkit-mask-image: url('../../lib/touch/resources/themes/images/default/pictos/190-bank.png');
+}

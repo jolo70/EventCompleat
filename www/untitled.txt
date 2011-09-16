@@ -1,0 +1,14 @@
+All the Burgiss Group
+Data Service Remote Users
+Data Svc
+Domain Users
+Entity Research Public Readers
+Entity Researchers Remote Desktop Users Group
+EntityQ
+ER Docs Admin Readers
+ERs
+Stellenbosch
+Stellenbosch Users Group
+
+
+All the Burgiss Group; Data Service Remote Users; Data Svc; Domain Users; Entity Research Public Readers; Entity Researchers Remote Desktop Users Group; EntityQ; ER Docs Admin Readers; ERs; Stellenbosch; Stellenbosch Users Group
