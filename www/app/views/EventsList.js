@@ -15,8 +15,8 @@ app.views.EventsList = Ext.extend(Ext.Panel, {
 					action		: 'add',
 					id			: 1,
 					animation	: {
-							type		: 'slide',
-							direction	: 'left'
+							type		: 'fade',
+							duration	: '300'
 					}		
 				});	
 			}
@@ -56,8 +56,8 @@ app.views.EventsList = Ext.extend(Ext.Panel, {
 				action		: 'show',
 				id			: 1,
 				animation	: {
-						type		: 'slide',
-						direction	: 'left'
+						type		: 'fade',
+						duration	: '300'
 				}		
 			});
 		}
@@ -67,7 +67,7 @@ app.views.EventsList = Ext.extend(Ext.Panel, {
 		id					: 'app.views.EventsList',
 		layout				: 'card',
 		fullscreen  		: true,
-		cardSwitchAnimation	: 'slide',
+		cardSwitchAnimation	: 'fade',
 		dockedItems			: [titlebar, bottombar],
 		items				: [aList]
 	});
@@ -77,4 +77,4 @@ app.views.EventsList = Ext.extend(Ext.Panel, {
     }
 });
 
-//Ext.reg('app.views.EventsList', app.views.EventsList);
+Ext.reg('app.views.EventsList', app.views.EventsList);

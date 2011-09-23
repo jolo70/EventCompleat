@@ -14,13 +14,13 @@ app.views.EventForm = Ext.extend(Ext.form.FormPanel, {
 				iconMask: true,
 				handler: function () {
 					Ext.dispatch({
-						controller	: app.controllers.EventForm,
+						controller	: app.controllers.EventDetail,
 						action		: 'back',
+						id			: 1,
 						animation	: {
-								type	: 'fade',
-								duration: '200'
-						}
-						
+								type		: 'fade',
+								duration	: '300'
+						}		
 					});
 				}
 			}
@@ -46,8 +46,8 @@ app.views.EventForm = Ext.extend(Ext.form.FormPanel, {
 							action		: 'save',
 							id			: 1,
 							animation	: {
-									type		: 'fade',
-									duration	: '200'
+									type		: 'slide',
+									direction	: 'right'
 							}
 							
 						});
@@ -143,4 +143,4 @@ app.views.EventForm = Ext.extend(Ext.form.FormPanel, {
     }
 });
 
-//Ext.reg('app.views.EventForm', app.views.EventForm);
+Ext.reg('app.views.EventForm', app.views.EventForm);

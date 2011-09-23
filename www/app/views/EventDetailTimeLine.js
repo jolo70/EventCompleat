@@ -16,8 +16,8 @@ app.views.EventDetailTimeLine = Ext.extend(Ext.Panel, {
 		 ]
 	  };
 	  Ext.apply(this, {
-		 id			: 'timeline',
-		 iconCls		: 'calendar2',
+		 id			: 'apps.views.TimeLine',
+		 iconCls	: 'calendar2',
 		 title		: 'Time Line',
 		 badgeText	: app.stores.TaskListTemplates.getCount(),
 		 items		: [aList]

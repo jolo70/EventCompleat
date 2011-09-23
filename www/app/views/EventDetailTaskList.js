@@ -24,9 +24,9 @@ app.views.EventDetailTaskList = Ext.extend(Ext.Panel, {
 		 ]
 	  };
 	  Ext.apply(this, {
-		 id			: 'tasklist',
+		 id			: 'app.views.EventDetailTaskList',
 		 title		: 'Task List',
-		 iconCls		: 'event-complete',
+		 iconCls	: 'event-complete',
 		 layout		: 'fit',
 		 badgeText	: app.stores.TaskListTemplates.getCount(),
 		 items		: [aList]

@@ -1,38 +1,59 @@
 app.views.EventDetailBudgetChart = Ext.extend(Ext.Panel, {
 	initComponent: function() {
-	  var chartPanel;
+	  var chartPanel, titleBar;
+	  
+	titleBar = {
+		xtype	: 'toolbar',
+		dock	: 'top',
+		ui		: 'light',
+		items	: [
+			{
+				text	: 'Back', 
+				ui		: 'back', 
+				iconMask: true,
+				handler : function () {
+					Ext.dispatch({
+						controller	: app.controllers.EventDetailBudget,
+						action		: 'back',
+						id			: 1,
+						animation	: {
+							type		: 'fade',
+							duration	: '300'
+						}		
+					});
+				}
+			}
+		]
+     };
 	  
 	  chartPanel = new Ext.chart.Panel({
 			title			: 'Cost',
-			//fullscreen	: true //creates a modal windows
-			dockedItems	: [],
+			dockedItems		: [titleBar],
 			items			: {
 				cls			: 'pie1',
-				theme			: 'Demo',
-				store			: app.stores.TaskListTemplates,
+				theme		: 'Demo',
+				store		: app.stores.TaskListTemplates,
 				shadow		: true,
 				animate		: true,
 				insetPadding: 5,
 				series		: [{
-					type			: 'pie',
-					field			: 'cost',
+					type		: 'pie',
+					field		: 'cost',
 					showInLegend: true,
 					highlight	: false,
-					label			: {field: 'tli_name'}
-				}],
-			
-			
-			},
-			
-	  
+					label		: {field: 'tli_name'}
+				}]
+			}
 	  });
 	  
 	  Ext.apply(this, {
-		 id			: 'budgetChart',
-		 iconCls		: 'piechart',
+		 id			: 'app.views.EventDetailBudgetChart',
+		 //itemId		: 'app.views.EventDetailBudgetChart',
+		 iconCls	: 'piechart',
 		 title		: 'Pie Chart',
 		 layout		: 'fit',
 		 badgeText	: "",
+		 style		: "background-color: white;",
 		 dockedItems: [],
 		 items		: [chartPanel]
 		 

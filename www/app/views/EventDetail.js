@@ -52,11 +52,10 @@ app.views.EventDetail = Ext.extend(Ext.TabPanel, {
 										
 				},
 		  items			: [
-
-			app.views.EventDetailTaskList,
-			app.views.EventDetailAttendees,
-			app.views.EventDetailBudget,
-			app.views.EventDetailBudgetChart,																							
+				{xtype: 'app.views.EventDetailTaskList'},
+				{xtype: 'app.views.EventDetailAttendees'},
+				{xtype: 'app.views.EventDetailBudget'},
+				{xtype: 'app.views.EventDetailBudgetChart'},
 				{id: 'more', title: 'More', iconCls: 'more'}
 		  
 		  ]

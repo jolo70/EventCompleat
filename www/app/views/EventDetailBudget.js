@@ -27,20 +27,28 @@ app.views.EventDetailBudget = Ext.extend(Ext.Panel, {
 				{text: 'Total: ' + usMoney(String(app.stores.TaskListTemplates.sum('cost'))), style: 'font-size: 20pt;', ui: 'plain', iconMask: false},
 				{xtype: 'spacer'},
 				{
-					iconCls: 'piechart', 
-					ui: 'confirm', 
-					iconMask: true,
-					handler: function () {
-						this.setActiveItem('budgetChart', {type: 'slide', direction: 'left'});
-					
+					iconCls		: 'piechart', 
+					ui			: 'confirm', 
+					iconMask	: true,
+					handler 	: function(){
+						Ext.dispatch({
+							controller	: app.controllers.EventDetailBudget,
+							action		: 'showChart',
+							id			: 1,
+							scope		: this,
+							animation	: {
+								type		: 'fade',
+								duration	: '300'
+							}		
+						});
 					}
 				}
 		  ]
 	  };
 	  
 	  Ext.apply(this, {
-		 id			: 'budget',
-		 iconCls		: 'budget',
+		 id			: 'app.views.EventDetailBudget',
+		 iconCls	: 'budget',
 		 title		: 'Budget',
 		 layout		: 'fit',
 		 badgeText	: "",//app.stores.TaskListTemplates.getCount(),
